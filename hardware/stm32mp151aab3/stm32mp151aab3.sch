@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -69,4 +69,20 @@ U 5FE97965
 F0 "CPU" 50
 F1 "CPU.sch" 50
 $EndSheet
+$Sheet
+S 1250 3200 1050 200 
+U 5FEB1357
+F0 "DDR3" 50
+F1 "DDR3.sch" 50
+F2 "VDD_DDR" I L 1250 3300 50 
+F3 "DDR_SIGNALS" B R 2300 3300 50 
+$EndSheet
+Text GLabel 2850 850  2    50   Input ~ 0
+VDD_DDR_1.35V
+Wire Wire Line
+	2850 850  2650 850 
+Text GLabel 1200 3300 0    50   Input ~ 0
+VDD_DDR_1.35V
+Wire Wire Line
+	1200 3300 1250 3300
 $EndSCHEMATC
