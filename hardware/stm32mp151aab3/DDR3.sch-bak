@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -858,6 +858,146 @@ Wire Wire Line
 	4450 6600 4350 6600
 Wire Wire Line
 	4350 6600 4350 6800
+Text Label 1350 750  0    50   ~ 0
+DDR_SIGNALS
+$Comp
+L Device:C_Small C?
+U 1 1 6021DB1E
+P 7600 2250
+F 0 "C?" H 7692 2296 50  0000 L CNN
+F 1 "100n" H 7692 2205 50  0000 L CNN
+F 2 "" H 7600 2250 50  0001 C CNN
+F 3 "~" H 7600 2250 50  0001 C CNN
+	1    7600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6021DB28
+P 8000 2250
+F 0 "C?" H 8092 2296 50  0000 L CNN
+F 1 "100n" H 8092 2205 50  0000 L CNN
+F 2 "" H 8000 2250 50  0001 C CNN
+F 3 "~" H 8000 2250 50  0001 C CNN
+	1    8000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6021DB32
+P 8400 2250
+F 0 "C?" H 8492 2296 50  0000 L CNN
+F 1 "100n" H 8492 2205 50  0000 L CNN
+F 2 "" H 8400 2250 50  0001 C CNN
+F 3 "~" H 8400 2250 50  0001 C CNN
+	1    8400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6021DB3C
+P 8800 2250
+F 0 "C?" H 8892 2296 50  0000 L CNN
+F 1 "100n" H 8892 2205 50  0000 L CNN
+F 2 "" H 8800 2250 50  0001 C CNN
+F 3 "~" H 8800 2250 50  0001 C CNN
+	1    8800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6021DB46
+P 9200 2250
+F 0 "C?" H 9292 2296 50  0000 L CNN
+F 1 "100n" H 9292 2205 50  0000 L CNN
+F 2 "" H 9200 2250 50  0001 C CNN
+F 3 "~" H 9200 2250 50  0001 C CNN
+	1    9200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6021DB50
+P 9600 2250
+F 0 "C?" H 9692 2296 50  0000 L CNN
+F 1 "100n" H 9692 2205 50  0000 L CNN
+F 2 "" H 9600 2250 50  0001 C CNN
+F 3 "~" H 9600 2250 50  0001 C CNN
+	1    9600 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 2150 9600 2100
+Wire Wire Line
+	7200 2100 7600 2100
+$Comp
+L power:GND #PWR?
+U 1 1 6021DB5C
+P 7600 2450
+F 0 "#PWR?" H 7600 2200 50  0001 C CNN
+F 1 "GND" H 7605 2277 50  0000 C CNN
+F 2 "" H 7600 2450 50  0001 C CNN
+F 3 "" H 7600 2450 50  0001 C CNN
+	1    7600 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2350 7600 2400
+Wire Wire Line
+	7600 2400 8000 2400
+Wire Wire Line
+	9600 2400 9600 2350
+Connection ~ 7600 2400
+Wire Wire Line
+	7600 2400 7600 2450
+Wire Wire Line
+	9200 2350 9200 2400
+Connection ~ 9200 2400
+Wire Wire Line
+	9200 2400 9600 2400
+Wire Wire Line
+	8000 2350 8000 2400
+Connection ~ 8000 2400
+Wire Wire Line
+	8000 2400 8400 2400
+Wire Wire Line
+	8400 2350 8400 2400
+Connection ~ 8400 2400
+Wire Wire Line
+	8400 2400 8800 2400
+Wire Wire Line
+	8800 2350 8800 2400
+Connection ~ 8800 2400
+Wire Wire Line
+	8800 2400 9200 2400
+Wire Wire Line
+	7600 2150 7600 2100
+Connection ~ 7600 2100
+Wire Wire Line
+	7600 2100 8000 2100
+Wire Wire Line
+	8000 2150 8000 2100
+Connection ~ 8000 2100
+Wire Wire Line
+	8000 2100 8400 2100
+Wire Wire Line
+	8400 2150 8400 2100
+Connection ~ 8400 2100
+Wire Wire Line
+	8400 2100 8800 2100
+Wire Wire Line
+	8800 2150 8800 2100
+Connection ~ 8800 2100
+Wire Wire Line
+	8800 2100 9200 2100
+Wire Wire Line
+	9200 2150 9200 2100
+Connection ~ 9200 2100
+Wire Wire Line
+	9200 2100 9600 2100
+Wire Wire Line
+	7200 1450 7200 2100
 Wire Bus Line
 	2000 750  2000 6350
+Connection ~ 7200 1450
 $EndSCHEMATC
