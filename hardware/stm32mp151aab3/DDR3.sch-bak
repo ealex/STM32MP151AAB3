@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L stm32mp151:MT41K256M16 U?
+L stm32mp151:MT41K256M16 U2
 U 1 1 5FEB1632
 P 5650 1000
-F 0 "U?" H 6050 1265 50  0000 C CNN
+F 0 "U2" H 6050 1265 50  0000 C CNN
 F 1 "MT41K256M16" H 6050 1174 50  0000 C CNN
 F 2 "" H 6550 -1400 50  0001 C CNN
 F 3 "" H 6550 -1400 50  0001 C CNN
@@ -494,25 +494,17 @@ Entry Wire Line
 	2000 3000 2100 3100
 Entry Wire Line
 	2000 3100 2100 3200
-Wire Wire Line
-	2100 3200 5550 3200
-Wire Wire Line
-	5550 3100 2100 3100
-Text Label 4700 3100 0    50   ~ 0
+Text Label 4700 3000 0    50   ~ 0
 DDR_LDQS
-Text Label 4700 3200 0    50   ~ 0
+Text Label 4700 3100 0    50   ~ 0
 DDR_~LDQS
 Entry Wire Line
-	2000 2750 2100 2850
+	2000 2800 2100 2900
 Entry Wire Line
-	2000 2850 2100 2950
-Wire Wire Line
-	2100 2950 5550 2950
-Wire Wire Line
-	5550 2850 2100 2850
-Text Label 4700 2850 0    50   ~ 0
+	2000 2900 2100 3000
+Text Label 4700 1800 0    50   ~ 0
 DDR_UDQS
-Text Label 4700 2950 0    50   ~ 0
+Text Label 4700 1900 0    50   ~ 0
 DDR_~UDQS
 Entry Wire Line
 	2000 4750 2100 4850
@@ -605,17 +597,13 @@ DDR_A13
 Text Label 4700 3450 0    50   ~ 0
 DDR_A14
 Entry Wire Line
+	2000 2700 2100 2800
+Entry Wire Line
 	2000 2600 2100 2700
+Text Label 4700 3200 0    50   ~ 0
+DDR_LDM
 Entry Wire Line
 	2000 2500 2100 2600
-Wire Wire Line
-	2100 2700 5550 2700
-Wire Wire Line
-	5550 2600 2100 2600
-Text Label 4700 2700 0    50   ~ 0
-DDR_LDM
-Text Label 4700 2600 0    50   ~ 0
-DDR_UDM
 Entry Wire Line
 	2000 2400 2100 2500
 Entry Wire Line
@@ -624,8 +612,6 @@ Entry Wire Line
 	2000 2200 2100 2300
 Entry Wire Line
 	2000 2100 2100 2200
-Entry Wire Line
-	2000 2000 2100 2100
 Entry Wire Line
 	2000 1900 2100 2000
 Entry Wire Line
@@ -649,22 +635,6 @@ Entry Wire Line
 Entry Wire Line
 	2000 900  2100 1000
 Wire Wire Line
-	2100 2500 5550 2500
-Wire Wire Line
-	5550 2400 2100 2400
-Wire Wire Line
-	2100 2300 5550 2300
-Wire Wire Line
-	2100 2200 5550 2200
-Wire Wire Line
-	2100 2100 5550 2100
-Wire Wire Line
-	5550 2000 2100 2000
-Wire Wire Line
-	2100 1900 5550 1900
-Wire Wire Line
-	5550 1800 2100 1800
-Wire Wire Line
 	2100 1700 5550 1700
 Wire Wire Line
 	5550 1600 2100 1600
@@ -680,21 +650,21 @@ Wire Wire Line
 	2100 1100 5550 1100
 Wire Wire Line
 	5550 1000 2100 1000
-Text Label 4700 2500 0    50   ~ 0
+Text Label 4700 2900 0    50   ~ 0
 DDR_DQ0
-Text Label 4700 2400 0    50   ~ 0
+Text Label 4700 2800 0    50   ~ 0
 DDR_DQ1
-Text Label 4700 2300 0    50   ~ 0
+Text Label 4700 2700 0    50   ~ 0
 DDR_DQ2
-Text Label 4700 2200 0    50   ~ 0
+Text Label 4700 2600 0    50   ~ 0
 DDR_DQ3
-Text Label 4700 2100 0    50   ~ 0
+Text Label 4700 2500 0    50   ~ 0
 DDR_DQ4
-Text Label 4700 2000 0    50   ~ 0
+Text Label 4700 2400 0    50   ~ 0
 DDR_DQ5
-Text Label 4700 1900 0    50   ~ 0
+Text Label 4700 2300 0    50   ~ 0
 DDR_DQ6
-Text Label 4700 1800 0    50   ~ 0
+Text Label 4700 2200 0    50   ~ 0
 DDR_DQ7
 Text Label 4700 1700 0    50   ~ 0
 DDR_DQ8
@@ -997,7 +967,37 @@ Wire Wire Line
 	9200 2100 9600 2100
 Wire Wire Line
 	7200 1450 7200 2100
+Connection ~ 7200 1450
+Text Label 4700 2000 0    50   ~ 0
+DDR_UDM
+Wire Wire Line
+	5550 3200 2100 3200
+Wire Wire Line
+	5550 2600 2100 2600
+Wire Wire Line
+	5550 2200 2100 2200
+Wire Wire Line
+	2100 2300 5550 2300
+Wire Wire Line
+	5550 2400 2100 2400
+Wire Wire Line
+	5550 1800 2100 1800
+Wire Wire Line
+	2100 1900 5550 1900
+Wire Wire Line
+	5550 2000 2100 2000
+Wire Wire Line
+	2100 2500 5550 2500
+Wire Wire Line
+	5550 3100 2100 3100
+Wire Wire Line
+	2100 3000 5550 3000
+Wire Wire Line
+	5550 2900 2100 2900
+Wire Wire Line
+	2100 2800 5550 2800
+Wire Wire Line
+	5550 2700 2100 2700
 Wire Bus Line
 	2000 750  2000 6350
-Connection ~ 7200 1450
 $EndSCHEMATC

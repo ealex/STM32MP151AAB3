@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -16,10 +16,10 @@ $EndDescr
 Text HLabel 3600 1050 0    50   Input ~ 0
 VCC_3V3
 $Comp
-L Interface_Ethernet:KSZ8081RNA U?
+L Interface_Ethernet:KSZ8081RNA U3
 U 1 1 601756AE
 P 5900 4600
-F 0 "U?" H 5350 5700 50  0000 C CNN
+F 0 "U3" H 5350 5700 50  0000 C CNN
 F 1 "KSZ8081RNA" H 6250 3600 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 7300 3600 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/00002199A.pdf" H 3650 4800 50  0001 C CNN
@@ -577,7 +577,58 @@ Connection ~ 3250 5000
 Text HLabel 1550 5100 0    50   Input ~ 0
 ETH_~RST
 Wire Wire Line
-	5200 5100 1550 5100
+	5200 5100 2800 5100
 Text Label 5900 2650 3    50   ~ 0
 ETH_VDDA
+$Comp
+L Device:C_Small C?
+U 1 1 60EE2F12
+P 2150 6600
+F 0 "C?" H 2242 6646 50  0000 L CNN
+F 1 "2.2u" H 2242 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2150 6600 50  0001 C CNN
+F 3 "~" H 2150 6600 50  0001 C CNN
+	1    2150 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60EE48B2
+P 2150 6300
+F 0 "R?" H 2091 6254 50  0000 R CNN
+F 1 "4.7k" H 2091 6345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2150 6300 50  0001 C CNN
+F 3 "~" H 2150 6300 50  0001 C CNN
+	1    2150 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 6400 2150 6450
+Wire Wire Line
+	2150 6450 2800 6450
+Wire Wire Line
+	2800 6450 2800 5100
+Connection ~ 2150 6450
+Wire Wire Line
+	2150 6450 2150 6500
+Connection ~ 2800 5100
+Wire Wire Line
+	2800 5100 1550 5100
+Text HLabel 2150 6100 1    50   Input ~ 0
+VCC_3V3
+Wire Wire Line
+	2150 6100 2150 6200
+$Comp
+L power:GND #PWR?
+U 1 1 60EEF3AB
+P 2150 6800
+F 0 "#PWR?" H 2150 6550 50  0001 C CNN
+F 1 "GND" H 2155 6627 50  0000 C CNN
+F 2 "" H 2150 6800 50  0001 C CNN
+F 3 "" H 2150 6800 50  0001 C CNN
+	1    2150 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6700 2150 6800
 $EndSCHEMATC
